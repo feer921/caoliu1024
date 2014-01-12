@@ -1,32 +1,47 @@
 body {
-  font-size: 20px;
+  font-size: 1em;
   color: #666;
 }
 .logo {
   width: 100%;
 }
+.li {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
 .back {
-  background: #ccc;
-  height: 10%;
-  padding-left: 5%;
+  background: #333;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  color: #FFF;
+  font-weight: bold;
 }
 .category, .item {
   line-height: 40px;
-  border-top: 2px solid #aaa;
-  padding-left: 5%;
+  padding-left: 10px;
+  margin: 10px;
+  background: #FFF;
 }
 .list-page {
   position: fixed;
   background: #FFF;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   left: 100%;
   -webkit-transition: left .5s ease-in-out;
 }
+#list-panel {
+  height: 100%;
+  overflow: auto;
+  background: #EDEDED;
+}
 .list {
-  height: 90%;
-  overflow: scroll;
 }
 .list-page.show {
   left: 0;
@@ -41,10 +56,16 @@ body {
   -webkit-transition: left .5s ease-in-out;
 }
 .detail {
-  overflow: scroll;
-  padding: 5%;
-  height: 90%;
+  overflow: auto;
+  height: 100%;
+  padding: 50px 10px 20px 10px;
 }
 .detail-page.show {
   left: 0;
+}
+.more {
+  text-align: center;
+  height: 50px;
+  background: #EDEDED;
+  line-height: 50px;
 }

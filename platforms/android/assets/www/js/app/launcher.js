@@ -52,9 +52,15 @@ app.goToList = function() {
   $('#detail-page').removeClass('show');
 };
 
+app.goToListTop = function() {
+  $('#list-page').addClass('show');
+  $('#detail-page').removeClass('show');
+  $('#list')[0].scrollTop = 0;
+};
+
 app.goToDetail = function() {
-  $('#list-page').removeClass('show');
   $('#detail-page').addClass('show');
+  $('#detail')[0].scrollTop = 0;
 };
 
 app.goToIndex = function() {

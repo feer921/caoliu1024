@@ -33,15 +33,18 @@
       <div id="index">
         <img class="logo" src="" />
         <div class="categorys">
-          <div class="books">成人文學</div>
+          <div class="books li">成人文學</div>
         </div>
       </div>
       <div id="list-page" class="list-page">
-        <div class="back" onclick="app.goToIndex()">back</div>
-        <div id="list" class="list"></div>
+        <div class="back" onclick="app.goToIndex()">返回</div>
+        <div id="list-panel">
+          <div id="list" class="list"></div>
+          <div class="more">更多</div>
+        </div>
       </div>
       <div id="detail-page" class="detail-page">
-        <div class="back" onclick="app.goToList()">back</div>
+        <div class="back" onclick="app.goToList()">返回</div>
         <div id="detail" class="detail"></div>
       </div>
     </div>
